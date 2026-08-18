@@ -1,15 +1,15 @@
 import type { Locale } from "@/lib/types";
 
 export const siteConfig = {
-  name: "Seu Nome",
+  name: "Gustavo Leonardi",
   role: {
     pt: "Engenheiro(a) de Software",
     en: "Software Engineer",
   },
-  email: "seuemail@exemplo.com",
-  whatsapp: "5500000000000",
+  email: "gustavo@mayer.inf.br",
+  whatsapp: "5531993995552",
   linkedin: "https://www.linkedin.com/in/seu-usuario",
-  github: "https://github.com/seu-usuario",
+  github: "https://github.com/gusLeonardi",
 };
 
 export const dictionary = {
@@ -34,8 +34,8 @@ export const dictionary = {
     },
     focusTitle: { pt: "Áreas de atuação", en: "Focus areas" },
     focusItems: {
-      pt: ["Desenvolvimento Front-end", "Desenvolvimento Back-end", "UI/UX e Design de Interfaces", "Arquitetura de Software"],
-      en: ["Front-end Development", "Back-end Development", "UI/UX & Interface Design", "Software Architecture"],
+      pt: ["Desenvolvimento Front-end", "Desenvolvimento Back-end", "Arquitetura de Software", "Engenharia de Sotware", "Inteligência Artificial"],
+      en: ["Front-end Development", "Back-end Development", "Software Architecture", "Software Engineer", "Artificial Inteligence"],
     },
     goalsTitle: { pt: "Objetivos", en: "Goals" },
     goalsBody: {
