@@ -138,21 +138,13 @@ npm run lint
 
 ## 📸 Capturas de tela
 
-  -------------------------------------------------------------------------------------
-  Sobre Mim                                Projetos
-  ---------------------------------------- --------------------------------------------
-  ![Página Sobre                           ![Página
-  Mim](./docs/screenshots/sobre-mim.jpg)   Projetos](./docs/screenshots/projetos.jpg)
+| Sobre mim | Projetos |
+| --- | --- |
+| ![Página Sobre Mim](./docs/screenshots/sobre-mim.jpg) | ![Página Projetos](./docs/screenshots/projetos.jpg) |
 
-  -------------------------------------------------------------------------------------
-
-  -----------------------------------------------------------------------------------------------
-  Experiências                                         Contato
-  ---------------------------------------------------- ------------------------------------------
-  ![Página                                             ![Página
-  Experiências](./docs/screenshots/experiencias.jpg)   Contato](./docs/screenshots/contato.jpg)
-
-  -----------------------------------------------------------------------------------------------
+| Experiências | Contato |
+| --- | --- |
+| ![Página Experiências](./docs/screenshots/experiencias.jpg) | ![Página Contato](./docs/screenshots/contato.jpg) |
 
 ## ☁️ Deploy
 
