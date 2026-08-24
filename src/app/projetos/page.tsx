@@ -57,15 +57,18 @@ export default function ProjectsPage() {
                 </div>
 
                 <div className="mt-5 flex flex-wrap gap-4 text-sm font-medium">
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-1.5 text-foreground transition-colors hover:text-accent"
-                  >
-                    <GithubIcon className="h-4 w-4" />
-                    {copy.repository[locale]}
-                  </a>
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-1.5 text-foreground transition-colors hover:text-accent"
+                    >
+                      <GithubIcon className="h-4 w-4" />
+                      {copy.repository[locale]}
+                    </a>
+                  )}
+
                   {project.demoUrl && (
                     <a
                       href={project.demoUrl}

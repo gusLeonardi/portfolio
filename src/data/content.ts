@@ -8,7 +8,7 @@ export const siteConfig = {
   },
   email: "gustavo@mayer.inf.br",
   whatsapp: "5531993995552",
-  linkedin: "https://www.linkedin.com/in/seu-usuario",
+  linkedin: "https://www.linkedin.com/in/gustavo-leonardi-220aa0242/",
   github: "https://github.com/gusLeonardi",
 };
 

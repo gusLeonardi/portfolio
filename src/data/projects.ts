@@ -11,6 +11,7 @@ export const projects: Project[] = [
     },
     technologies: ["React", "Node.js", "Java", "SpringBoot", "TypeScript", "MySQL"],
     githubUrl: "https://github.com/gusLeonardi/bibliotech",
+    image: "../images/projects/bibliotech.png"
   },
   {
     slug: "Segundo Projeto",
@@ -22,6 +23,7 @@ export const projects: Project[] = [
     },
     technologies: ["React", "Vite", "PostgreSQL", "Java", "Docker", "TypeScript"],
     githubUrl: "https://github.com/gusLeonardi/plf-es-2026-1-ti3-5533100-jurisflow",
+    image: "../images/projects/jurisflow.png"
   },
   {
     slug: "Terceiro Projeto",
@@ -32,6 +34,6 @@ export const projects: Project[] = [
       en: "Migration from a municipal NFSe issuance system to the national standard, including Danfse.",
     },
     technologies: ["PHP", "MySQL", "WinSCP", "ScriptCase"],
-    githubUrl: "https://github.com/",
+    image: "../images/projects/NFSe.png"
   },
 ];

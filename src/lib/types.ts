@@ -8,7 +8,7 @@ export interface Project {
   date: string;
   description: LocalizedText;
   technologies: string[];
-  githubUrl: string;
+  githubUrl?: string;
   demoUrl?: string;
   image?: string;
 }
