@@ -47,7 +47,7 @@ export const dictionary = {
     },
 
     aboutBody: {
-      pt: "Sou estudante de Engenharia de Software e tenho interesse em desenvolvimento full-stack, com maior afinidade pelo back-end. Ao longo da graduação, venho desenvolvendo projetos utilizando tecnologias como Java, Spring Boot, React, TypeScript e bancos de dados relacionais. Gosto de entender o problema antes de partir para o código e buscar soluções organizadas, eficientes e fáceis de manter. Atualmente, procuro oportunidades de estágio onde possa aplicar meus conhecimentos, aprender com profissionais mais experientes e contribuir para projetos reais.",
+      pt: "Sou estudante de Engenharia de Software e tenho interesse em desenvolvimento full-stack, com maior afinidade pelo back-end. Ao longo da graduação, venho desenvolvendo projetos utilizando tecnologias como Java, Spring Boot, React, TypeScript e bancos de dados relacionais.\n Gosto de entender o problema antes de partir para o código e buscar soluções organizadas, eficientes e fáceis de manter. Atualmente, procuro oportunidades de estágio onde possa aplicar meus conhecimentos, aprender com profissionais mais experientes e contribuir para projetos reais.",
       en: "I am a Software Engineering student interested in full-stack development, with a stronger focus on back-end development. Throughout my degree, I have been building projects using technologies such as Java, Spring Boot, React, TypeScript, and relational databases. I enjoy understanding the problem before writing code and finding solutions that are organized, efficient, and easy to maintain. I am currently looking for internship opportunities where I can apply my knowledge, learn from experienced professionals, and contribute to real-world projects.",
     },
 
