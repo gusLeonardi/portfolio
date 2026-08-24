@@ -1,66 +1,176 @@
 # Portfólio Profissional
 
-Site de portfólio bilíngue (PT/EN) e responsivo, com seções de Sobre Mim, Projetos, Experiências e Contato (com envio de e-mail via back-end próprio). Desenvolvido para o Laboratório 1 — Projeto de Software (PUC Minas, Engenharia de Software).
+Portfólio profissional bilíngue (**Português/Inglês**) e responsivo,
+desenvolvido para o **Laboratório 1 da disciplina Projeto de Software
+--- Engenharia de Software, PUC Minas**.
 
-**Equipe:** Felipe Costa, Sofia Fernandes, Arthur Martins, Gustavo Leonardi
+O site apresenta informações profissionais, projetos desenvolvidos,
+experiências e formas de contato. A aplicação também possui alternância
+entre tema claro e escuro e formulário de contato com envio de e-mail
+por meio de uma API própria.
 
-**Wireframes (Figma):** https://www.figma.com/design/DV5dIJR6QSNuIARWeF3Suw/Prototipo-Portfolio?node-id=0-1
+## 🌐 Site publicado
 
+**Portfólio:** https://portfolio-delta-liart-63.vercel.app
 
-## Tecnologias
+## 🎨 Protótipo
 
-- **[Next.js](https://nextjs.org/)** (App Router) — framework React fullstack, usado no front-end e no back-end (API Route de contato).
-- **[React](https://react.dev/)** — biblioteca de UI.
-- **[TypeScript](https://www.typescriptlang.org/)** — tipagem estática.
-- **[Tailwind CSS](https://tailwindcss.com/)** — estilização utilitária, tema claro/escuro e responsividade.
-- **[Resend](https://resend.com/)** — envio de e-mails a partir da API Route `/api/contact`.
+Os wireframes e o protótipo da interface foram desenvolvidos no Figma.
 
-## Estrutura de diretórios
+**Figma:**
+https://www.figma.com/design/DV5dIJR6QSNuIARWeF3Suw/Prototipo-Portfolio?node-id=0-1
 
-```
+## 👥 Equipe
+
+-   Felipe Costa
+-   Sofia Fernandes
+-   Arthur Martins
+-   Gustavo Leonardi
+
+> Cada integrante possui seu próprio portfólio e repositório,
+> compartilhando apenas a estrutura e os componentes-base desenvolvidos
+> pela equipe.
+
+## 🚀 Funcionalidades
+
+-   Interface bilíngue em Português e Inglês;
+-   Tema claro e escuro;
+-   Layout responsivo para diferentes tamanhos de tela;
+-   Página **Sobre Mim** com apresentação, áreas de atuação e objetivos
+    profissionais;
+-   Página **Projetos** com linha do tempo;
+-   Tecnologias utilizadas em cada projeto;
+-   Links para repositórios públicos dos projetos, quando disponíveis;
+-   Imagens dos projetos em funcionamento;
+-   Página **Experiências** com histórico profissional;
+-   Página **Contato** com e-mail, WhatsApp, LinkedIn e GitHub;
+-   Formulário de contato com validação;
+-   Envio de e-mails pelo back-end utilizando Resend;
+-   Proteção básica contra spam utilizando honeypot.
+
+## 🛠️ Tecnologias
+
+-   **Next.js** --- framework React full-stack com App Router e API
+    Routes.
+-   **React** --- biblioteca para construção das interfaces.
+-   **TypeScript** --- tipagem estática.
+-   **Tailwind CSS** --- estilização, responsividade e temas
+    claro/escuro.
+-   **Resend** --- envio de e-mails pelo formulário de contato.
+-   **Vercel** --- hospedagem e deploy da aplicação.
+
+## 📦 Principais dependências
+
+-   Next.js
+-   React
+-   React DOM
+-   TypeScript
+-   Tailwind CSS
+-   Resend
+
+As versões utilizadas podem ser consultadas no arquivo `package.json`.
+
+## 📁 Estrutura de diretórios
+
+``` text
 src/
 ├── app/
-│   ├── page.tsx            # página "Sobre Mim" (rota "/")
-│   ├── projetos/            # timeline de projetos
-│   ├── experiencias/        # histórico de experiências
-│   ├── contato/              # formulário + canais de contato
-│   └── api/contact/          # back-end: envia e-mail via Resend
-├── components/               # Header, Footer, ícones, formulário...
-├── context/                   # idioma (PT/EN) e tema (claro/escuro)
-├── data/                       # textos (i18n), projetos e experiências
-└── lib/                         # tipos e utilitários
+│   ├── page.tsx
+│   ├── projetos/
+│   ├── experiencias/
+│   ├── contato/
+│   └── api/
+│       └── contact/
+├── components/
+├── context/
+├── data/
+└── lib/
 ```
 
-## Como rodar localmente
+## 💻 Como executar localmente
 
-Pré-requisitos: [Node.js 20+](https://nodejs.org/) e npm.
+### Pré-requisitos
 
-```bash
-git clone <url-do-repositório>
-cd portifolio_modelo
+-   Node.js 20 ou superior
+-   npm
+-   Git
+
+### 1. Clone o repositório
+
+``` bash
+git clone https://github.com/gusLeonardi/portfolio.git
+cd portfolio
+```
+
+### 2. Instale as dependências
+
+``` bash
 npm install
+```
 
-# opcional, só necessário para o formulário de contato
-cp .env.example .env.local
-# edite .env.local com sua RESEND_API_KEY e CONTACT_EMAIL_TO
+### 3. Configure o formulário de contato
 
+Crie um arquivo `.env.local` na raiz do projeto:
+
+``` env
+RESEND_API_KEY=sua_chave_do_resend
+CONTACT_EMAIL_TO=seu_email
+```
+
+> Nunca envie o arquivo `.env.local` ou sua `RESEND_API_KEY` para o
+> GitHub.
+
+### 4. Execute a aplicação
+
+``` bash
 npm run dev
 ```
 
-Acesse [http://localhost:3000](http://localhost:3000).
+Acesse `http://localhost:3000`.
 
-```bash
-npm run build   # build de produção
-npm run start   # roda o build de produção localmente
-npm run lint    # checagem de lint
+## 🔧 Outros comandos
+
+``` bash
+npm run build
+npm run start
+npm run lint
 ```
 
-## Capturas de tela
+## 📸 Capturas de tela
 
-| Sobre mim | Projetos |
-| --- | --- |
-| ![Página Sobre Mim](./docs/screenshots/sobre-mim.jpg) | ![Página Projetos](./docs/screenshots/projetos.jpg) |
+  -------------------------------------------------------------------------------------
+  Sobre Mim                                Projetos
+  ---------------------------------------- --------------------------------------------
+  ![Página Sobre                           ![Página
+  Mim](./docs/screenshots/sobre-mim.jpg)   Projetos](./docs/screenshots/projetos.jpg)
 
-| Experiências | Contato |
-| --- | --- |
-| ![Página Experiências](./docs/screenshots/experiencias.jpg) | ![Página Contato](./docs/screenshots/contato.jpg) |
+  -------------------------------------------------------------------------------------
+
+  -----------------------------------------------------------------------------------------------
+  Experiências                                         Contato
+  ---------------------------------------------------- ------------------------------------------
+  ![Página                                             ![Página
+  Experiências](./docs/screenshots/experiencias.jpg)   Contato](./docs/screenshots/contato.jpg)
+
+  -----------------------------------------------------------------------------------------------
+
+## ☁️ Deploy
+
+A aplicação está hospedada na **Vercel** e integrada ao repositório do
+GitHub. Novos commits enviados para a branch de produção geram
+automaticamente um novo deploy.
+
+**Aplicação publicada:** https://portfolio-delta-liart-63.vercel.app
+
+Para o formulário funcionar em produção, configure na Vercel:
+
+``` env
+RESEND_API_KEY
+CONTACT_EMAIL_TO
+```
+
+## 📚 Projeto acadêmico
+
+Projeto desenvolvido para a disciplina **Projeto de Software**, do curso
+de **Engenharia de Software da PUC Minas**, como parte do Laboratório 1
+--- Portfólio Profissional.
